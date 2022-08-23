@@ -1,0 +1,18 @@
+# Shell
+Implemented backend functions of the "Bash" shell
+
+1. execution of simple commands with zero or more arguments
+2. definition of local environment variables (NAME=VALUE)
+3. redirection of the standard input (<, <<)
+4. redirection of the standard output (>, >>)
+5. execution of pipelines (sequences of simple commands or subcommands separated by the pipeline operator |)
+6. execution of conditional commands (sequences of pipelines separated by the command operators && and ||)
+7. execution of sequences of conditional commands separated or terminated by the command terminators ; and & execution of commands in the background (&)
+8. subcommands (commands enclosed in parentheses that act like a single, simple command)
+9. reporting the status of the last simple command, pipeline, conditional command, or subcommand executed by setting the environment variable $? to its "printed" value (e.g., the string "0" if the value is zero).
+10. directory manipulation:
+  cd dirName - Change current working directory to DIRNAME
+  cd - Equivalent to "cd $HOME" where HOME is an environment variable
+  pushd dirName - Save the current directory on the top of the directory stack and then cd to dirName 
+  popd -  This removes the top directory from the stack and performs a cd to the new top directory 
+11. Exit status: reporting the status of the last simple command, pipeline, or subcommand executed by setting the environment variable $? to its "printed" value. (e.g., the string "0" if the value is zero)
